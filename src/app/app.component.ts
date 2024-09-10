@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'portfolia';
 
   ngOnInit() {
     const toTop = document.querySelector(".top")
