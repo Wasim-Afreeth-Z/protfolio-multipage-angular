@@ -1,0 +1,52 @@
+<div class="container">
+    <!-- header -->
+    <!-- desktop header -->
+    <nav class="desktop-header">
+        <ul class="nav-bar">
+            <div class="header-left">
+                <li>
+                    <h1 class="desktop">PROTFOLIO.</h1>
+                </li>
+                <li><a routerLink="/home" routerLinkActive="routerActive" class="header home">Home</a></li>
+                <li><a routerLink="/project" routerLinkActive="routerActive" class="header projects">Projects</a></li>
+                <li><a routerLink="/about" routerLinkActive="routerActive" class="header about">About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="routerActive" class="header contact">Contact</a></li>
+                 <!-- <li><a routerLink="/service" routerLinkActive="routerActive" class="header services">Services</a></li> -->
+                <!-- <li><a class="header Testimonials ">Client Testimonials</a></li> -->
+                <!-- <li><a class="header blog">Blog</a></li> -->
+            </div>
+            <div class="header-right">
+                <a routerLink="/about"><button class="header-button">LET'S TALK</button></a>
+                <!-- <div class="themeIcon"  [ngStyle]="{'color':themeValue?'black':'white'}" (click)="moonIcon()"><i class={{themeIcon}}></i></div> -->
+                <div class="moon" id="moon" (click)="moonIcon()"><i class="fa-solid fa-moon"></i></div>
+                <div class="sun" id="sun" (click)="sunIcon()"><i class="fa-solid fa-sun"></i></div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- mobile-header -->
+    <nav class="mobile-header">
+        <div class="mobile-nav">
+            <div class="control">
+                <h1 class="mobile">Wasim.</h1>
+                <div class="control-right">
+                    <!-- <div class="themeIcon"  [ngStyle]="{'color':themeValue?'black':'white'}" (click)="themeChange()"><i class={{themeIcon}}></i></div> -->
+                    <div class="moon" id="moonmobile" (click)="moonIcon()"><i class="fa-solid fa-moon"></i></div>
+                    <div class="sun" id="sunmobile" (click)="sunIcon()"><i class="fa-solid fa-sun"></i></div>
+                    <div class="headerIcon" [ngStyle]="{'border-radius':headerValue?'0%':'50%'}"
+                        (click)="headerChange()"><i class={{headerIcon}}></i></div>
+                </div>
+            </div>
+            <ul [ngStyle]="{'display':headerValue?'none':'block'}" class="mobile-drop-down ">
+                <li><a routerLink="/home" routerLinkActive="routerActive" class="header2 home">Home</a></li>
+                <li><a routerLink="/project" routerLinkActive="routerActive" class="header2 projects">Projects</a></li>
+                <li><a routerLink="/about" routerLinkActive="routerActive" class="header2 about">About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="routerActive" class="header2 contact">Contact</a></li>
+                <!-- <li><a routerLink="/service" routerLinkActive="routerActive"  class="header2 services">Services</a></li> -->
+                <!-- <li><a class="header2 Testimonials ">Client Testimonials</a></li> -->
+                <!-- <li><a class="header2 blog">Blog</a></li> -->
+                <li><a class="headerbutton" routerLink="/contact"><button class="header2-button">LET'S TALK</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
