@@ -211,29 +211,19 @@ marquee img {
 }
 
 .project-name-1 {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 215px;
     color: var(--black-color);
     font-size: 30px;
 }
 
 .tech {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 175px;
     color: var(--black-color);
 }
 
 .tool {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 120px;
     color: var(--black-color);
     background: linear-gradient(90deg, #FFA84B 14.06%, #FF8A56 44.79%, #FF5E69 71.87%, #B16CEA 100%);
     width: 150px;
     text-align: center;
-    // display: inline-flex;
     padding-block: 12px;
     padding-inline: 15px;
     border-radius: 30px;
@@ -249,10 +239,6 @@ marquee img {
 .project-1:hover .project-1-hover {
     opacity: 1;
 }
-
-/* .project-1:focus .project-1-hover {
-opacity: 1;
-} */
 
 .project-2 {
     position: relative;
@@ -299,24 +285,15 @@ opacity: 1;
 }
 
 .project-name-2 {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 160px;
     color: var(--black-color);
     font-size: 30px;
 }
 
 .tech-2 {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 118px;
     color: var(--black-color);
 }
 
 .tool-2 {
-    // position: absolute;
-    // left: 50px;
-    // bottom: 60px;
     color: var(--black-color);
     background: linear-gradient(90deg, #FFA84B 14.06%, #FF8A56 44.79%, #FF5E69 71.87%, #B16CEA 100%);
     width: 150px;
@@ -556,21 +533,6 @@ opacity: 1;
         margin-top: 70px;
         margin-bottom: 60px;
     }
-
-    // .project-name-2 {
-    //     left: 50px;
-    //     bottom: 215px;
-    // }
-
-    // .tech-2 {
-    //     left: 50px;
-    //     bottom: 175px;
-    // }
-
-    // .tool-2 {
-    //     left: 50px;
-    //     bottom: 120px;
-    // }
 }
 
 @media (max-width: 1275px) {
@@ -635,39 +597,6 @@ opacity: 1;
     .tool-2 {
         font-size: 12px;
     }
-}
-
-@media (max-width: 1050px) {
-
-    // .project-name-1 {
-    //     left: 40px;
-    //     bottom: 205px;
-    // }
-
-    // .tech {
-    //     left: 40px;
-    //     bottom: 165px;
-    // }
-
-    // .tool {
-    //     left: 40px;
-    //     bottom: 110px;
-    // }
-
-    // .project-name-2 {
-    //     left: 40px;
-    //     bottom: 150px;
-    // }
-
-    // .tech-2 {
-    //     left: 40px;
-    //     bottom: 108px;
-    // }
-
-    // .tool-2 {
-    //     left: 40px;
-    //     bottom: 50px;
-    // }
 }
 
 @media (max-width: 1024px) {
@@ -775,42 +704,6 @@ opacity: 1;
     .tech-2 {
         font-size: 15px;
     }
-
-    // .tool,
-    // .tool-2 {
-    //     font-size: 10px;
-    // }
-
-    // .project-name-1 {
-    //     left: 30px;
-    //     bottom: 190px;
-    // }
-
-    // .tech {
-    //     left: 30px;
-    //     bottom: 155px;
-    // }
-
-    // .tool {
-    //     left: 30px;
-    //     bottom: 100px;
-    // }
-
-    // .project-name-2 {
-    //     left: 30px;
-    //     bottom: 135px;
-    // }
-
-    // .tech-2 {
-    //     left: 30px;
-    //     bottom: 98px;
-    // }
-
-    // .tool-2 {
-    //     left: 30px;
-    //     bottom: 40px;
-    // }
-
 }
 
 
@@ -830,38 +723,6 @@ opacity: 1;
     .vector {
         width: 30px;
     }
-}
-
-@media (max-width: 780px) {
-    // .project-name-1 {
-    //     left: 30px;
-    //     bottom: 175px;
-    // }
-
-    // .tech {
-    //     left: 30px;
-    //     bottom: 145px;
-    // }
-
-    // .tool {
-    //     left: 30px;
-    //     bottom: 90px;
-    // }
-
-    // .project-name-2 {
-    //     left: 30px;
-    //     bottom: 120px;
-    // }
-
-    // .tech-2 {
-    //     left: 30px;
-    //     bottom: 88px;
-    // }
-
-    // .tool-2 {
-    //     left: 30px;
-    //     bottom: 30px;
-    // }
 }
 
 @media (max-width: 700px) {
@@ -994,36 +855,6 @@ opacity: 1;
     .project-image-2 {
         height: 350px;
     }
-
-    // .project-name-1 {
-    //     left: 25px;
-    //     bottom: 160px;
-    // }
-
-    // .tech {
-    //     left: 25px;
-    //     bottom: 130px;
-    // }
-
-    // .tool {
-    //     left: 25px;
-    //     bottom: 80px;
-    // }
-
-    // .project-name-2 {
-    //     left: 25px;
-    //     bottom: 105px;
-    // }
-
-    // .tech-2 {
-    //     left: 25px;
-    //     bottom: 72px;
-    // }
-
-    // .tool-2 {
-    //     left: 25px;
-    //     bottom: 20px;
-    // }
 }
 
 @media (max-width: 460px) {
@@ -1067,36 +898,6 @@ opacity: 1;
     .project-link-2 {
         top: 38%;
     }
-
-    // .project-name-1 {
-    //     left: 20px;
-    //     bottom: 160px;
-    // }
-
-    // .tech {
-    //     left: 20px;
-    //     bottom: 130px;
-    // }
-
-    // .tool {
-    //     left: 20px;
-    //     bottom: 80px;
-    // }
-
-    // .project-name-2 {
-    //     left: 20px;
-    //     bottom: 105px;
-    // }
-
-    // .tech-2 {
-    //     left: 20px;
-    //     bottom: 72px;
-    // }
-
-    // .tool-2 {
-    //     left: 20px;
-    //     bottom: 20px;
-    // }
 }
 
 @media (max-width: 400px) {
