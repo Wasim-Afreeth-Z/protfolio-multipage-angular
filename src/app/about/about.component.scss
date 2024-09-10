@@ -70,35 +70,6 @@
     overflow: hidden;
 }
 
-.img-one {
-    max-width: 340px;
-    max-height: 620px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
-.img-two {
-    max-width: 540px;
-    max-height: 620px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
-.img-three {
-    max-width: 340px;
-    max-height: 310px;
-    min-width: 1px;
-    min-height: 1px;
-    display: inline;
-}
-
-.img-four {
-    max-width: 340px;
-    max-height: 310px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
 .count {
     padding-inline: 120px;
     margin-bottom: 130px;
@@ -204,38 +175,6 @@ marquee img {
 
 .edu{
     margin-bottom: 5px;
-}
-
-
-/* companies-logo */
-.companies-logo-section {
-    padding-inline: 120px;
-    margin-bottom: 120px;
-}
-
-.compaines-logo-topic {
-    font-size: 60px;
-    color: var(--black-color);
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.logo-topic {
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.compaines-logo {
-    display: grid;
-    grid-template-columns: repeat(4, 160px);
-    justify-content: space-between;
-    row-gap: 50px;
-    padding-inline: 70px;
-}
-
-.compaines-logo img {
-    width: 160px;
 }
 
 /* follow-me */
@@ -402,11 +341,6 @@ marquee img {
         flex-direction: column;
     }
 
-    .compaines-logo {
-        display: grid;
-        grid-template-columns: repeat(3, 160px);
-    }
-
     .follow-me-img {
         max-width: 520px;
         max-height: 520px;
@@ -444,13 +378,6 @@ marquee img {
 
     .follow-me-section {
         margin-bottom: 270px;
-    }
-}
-
-
-@media (max-width: 750px) {
-    .compaines-logo img {
-        width: 130px;
     }
 }
 
@@ -506,10 +433,6 @@ marquee img {
 
 
 @media (max-width: 630px) {
-    .compaines-logo {
-        display: grid;
-        grid-template-columns: repeat(2, 130px);
-    }
 
     .follow-me-img {
         max-width: 420px;
@@ -520,13 +443,6 @@ marquee img {
         top: 350px;
         left: 110px;
         max-width: 320px;
-    }
-}
-
-
-@media (max-width: 555px) {
-    .compaines-logo-topic {
-        font-size: 50px;
     }
 }
 
@@ -593,17 +509,7 @@ marquee img {
     }
 }
 
-@media (max-width: 424px) {
-    .compaines-logo-topic {
-        font-size: 45px;
-    }
-
-}
-
 @media (max-width: 400px) {
-    .compaines-logo img {
-        width: 100px;
-    }
 
     .follow-me-img {
         max-width: 240px;
@@ -632,12 +538,6 @@ marquee img {
 
     .follow-me-section {
         margin-bottom: 200px;
-    }
-}
-
-@media (max-width: 390px) {
-    .compaines-logo-topic {
-        font-size: 35px;
     }
 }
 

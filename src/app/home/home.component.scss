@@ -389,35 +389,6 @@ marquee img {
     overflow: hidden;
 }
 
-.img-one {
-    max-width: 340px;
-    max-height: 620px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
-.img-two {
-    max-width: 540px;
-    max-height: 620px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
-.img-three {
-    max-width: 340px;
-    max-height: 310px;
-    min-width: 1px;
-    min-height: 1px;
-    display: inline;
-}
-
-.img-four {
-    max-width: 340px;
-    max-height: 310px;
-    min-width: 1px;
-    min-height: 1px;
-}
-
 /* skill-section */
 .skill-section {
     padding-inline: 120px;
@@ -432,8 +403,6 @@ marquee img {
 }
 
 .skill-all-box {
-    // display: grid;
-    // grid-template-columns: repeat(5, 180px);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
