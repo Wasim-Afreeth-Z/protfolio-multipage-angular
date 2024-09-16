@@ -52,7 +52,7 @@
     margin-bottom: 10px;
 }
 
-.detail-data {
+.detail-data,.detail-data-2 {
     font-size: 22px;
     font-weight: 700;
     color: var(--black-color);
@@ -239,6 +239,10 @@
     opacity: 1;
 }
 
+.black{
+    color: black;
+}
+
 @media (max-width: 1250px) {
     .more-project {
         left: 15px;
@@ -303,7 +307,7 @@
         margin-bottom: 25px;
     }
 
-    .detail-data {
+    .detail-data,.detail-data-2 {
         font-size: 21px;
     }
 
@@ -482,7 +486,7 @@
         margin-bottom: 8px;
     }
 
-    .detail-data {
+    .projects-detail-box{
         margin-bottom: 20px;
     }
 }

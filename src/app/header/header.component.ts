@@ -27,6 +27,22 @@ export class HeaderComponent {
     this.headerIcon = !this.headerValue ? "fa fa-close" : "fa fa-bars"
   }
 
+  home() {
+    this.headerValue = true
+    this.headerIcon = "fa fa-bars"
+  }
+  project() {
+    this.headerValue = true
+    this.headerIcon = "fa fa-bars"
+  }
+  about() {
+    this.headerValue = true
+    this.headerIcon = "fa fa-bars"
+  }
+  contact() {
+    this.headerValue = true
+    this.headerIcon = "fa fa-bars"
+  }
 
   //Darkmode
   isdark: boolean = false
