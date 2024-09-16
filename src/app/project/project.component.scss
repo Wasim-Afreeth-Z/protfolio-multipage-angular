@@ -112,18 +112,23 @@
 }
 
 .project-link:hover {
-    color: black;
     transform: scale(1.1);
     transform-origin: top;
 }
 
 .github-link{
+    color: var(--black-color);
     margin-top: 5px;
 }
 
 .website-link{
+    color: var(--black-color);
     margin-top: 5px;
     margin-bottom: 8px;
+}
+
+.website-details{
+    color: var(--black-color);
 }
 
 
