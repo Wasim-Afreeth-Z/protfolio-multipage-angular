@@ -152,12 +152,15 @@ li {
 }
 
 .header2 {
-    display: block;
+    // display: block;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 60px;
     color: var(--black-color);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .header2:hover {
