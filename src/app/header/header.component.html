@@ -7,19 +7,19 @@
                 <li>
                     <h1 class="desktop">PROTFOLIO.</h1>
                 </li>
-                <li><a routerLink="/home" routerLinkActive="routerActive" class="header home">Home</a></li>
-                <li><a routerLink="/project" routerLinkActive="routerActive" class="header projects">Projects</a></li>
-                <li><a routerLink="/about" routerLinkActive="routerActive" class="header about">About</a></li>
-                <li><a routerLink="/contact" routerLinkActive="routerActive" class="header contact">Contact</a></li>
+                <li><a routerLink="/home" routerLinkActive="routerActive" class="header home"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                <li><a routerLink="/project" routerLinkActive="routerActive" class="header projects"><i class="fa-solid fa-file-chart-column"></i>Projects</a></li>
+                <li><a routerLink="/about" routerLinkActive="routerActive" class="header about"><i class="fa-solid fa-address-card"></i>About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="routerActive" class="header contact"><i class="fa-solid fa-message-arrow-up-right"></i>Contact</a></li>
                  <!-- <li><a routerLink="/service" routerLinkActive="routerActive" class="header services">Services</a></li> -->
                 <!-- <li><a class="header Testimonials ">Client Testimonials</a></li> -->
                 <!-- <li><a class="header blog">Blog</a></li> -->
             </div>
             <div class="header-right">
-                <a routerLink="/about"><button class="header-button">LET'S TALK</button></a>
+                <div routerLink="/contact"><button class="header-button">LET'S TALK<i class="fa-solid fa-messages"></i></button></div>
                 <!-- <div class="themeIcon"  [ngStyle]="{'color':themeValue?'black':'white'}" (click)="moonIcon()"><i class={{themeIcon}}></i></div> -->
-                <div class="moon" id="moon" (click)="moonIcon()"><i class="fa-solid fa-moon"></i></div>
-                <div class="sun" id="sun" (click)="sunIcon()"><i class="fa-solid fa-sun"></i></div>
+                <div class="moon" id="moon" (click)="moonIcon()"><i class="fa-sharp fa-solid fa-moon"></i></div>
+                <div class="sun" id="sun" (click)="sunIcon()"><i class="fa-solid fa-sun-bright"></i></div>
             </div>
         </ul>
     </nav>
@@ -31,8 +31,8 @@
                 <h1 class="mobile">Wasim.</h1>
                 <div class="control-right">
                     <!-- <div class="themeIcon"  [ngStyle]="{'color':themeValue?'black':'white'}" (click)="themeChange()"><i class={{themeIcon}}></i></div> -->
-                    <div class="moon" id="moonmobile" (click)="moonIcon()"><i class="fa-solid fa-moon"></i></div>
-                    <div class="sun" id="sunmobile" (click)="sunIcon()"><i class="fa-solid fa-sun"></i></div>
+                    <div class="moon" id="moonmobile" (click)="moonIcon()"><i class="fa-sharp-duotone fa-solid fa-moon-stars"></i></div>
+                    <div class="sun" id="sunmobile" (click)="sunIcon()"><i class="fa-solid fa-sun-bright"></i></div>
                     <div class="headerIcon" [ngStyle]="{'border-radius':headerValue?'0%':'50%'}"
                         (click)="headerChange()"><i class={{headerIcon}}></i></div>
                 </div>
@@ -45,7 +45,7 @@
                 <!-- <li><a routerLink="/service" routerLinkActive="routerActive"  class="header2 services">Services</a></li> -->
                 <!-- <li><a class="header2 Testimonials ">Client Testimonials</a></li> -->
                 <!-- <li><a class="header2 blog">Blog</a></li> -->
-                <li><a class="headerbutton" routerLink="/contact"><button class="header2-button">LET'S TALK</button></a>
+                <li><div (click)="contact()" class="headerbutton" routerLink="/contact"><button class="header2-button">LET'S TALK<i class="fa-solid fa-messages"></i></button></div>
                 </li>
             </ul>
         </div>
