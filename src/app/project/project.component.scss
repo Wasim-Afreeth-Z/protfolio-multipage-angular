@@ -52,7 +52,8 @@
     margin-bottom: 10px;
 }
 
-.detail-data,.detail-data-2 {
+.detail-data,
+.detail-data-2 {
     font-size: 22px;
     font-weight: 700;
     color: var(--black-color);
@@ -116,23 +117,23 @@
     transform-origin: top;
 }
 
-.github-link{
+.github-link {
     color: var(--black-color);
     margin-top: 5px;
 }
 
-.website-link{
+.website-link {
     color: var(--black-color);
     margin-top: 5px;
     margin-bottom: 8px;
 }
 
-.website-details{
+.website-details {
     color: var(--black-color);
 }
 
 
-.user{
+.user {
     font-weight: 700;
 }
 
@@ -160,10 +161,29 @@
 
 .more-project-left {
     position: relative;
+    overflow: hidden;
 }
 
 .more-project-right {
     position: relative;
+    overflow: hidden;
+}
+
+.more-hover {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    transform: translateY(200%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.6s;
+    background: var(--gradient-color);
+    padding-block: 7px;
+    padding-inline: 10px;
 }
 
 .more-img {
@@ -171,103 +191,54 @@
 }
 
 .more-project {
-    position: absolute;
-    left: 15px;
-    bottom: 100px;
-    color: white;
-    font-size: 30px;
+    color: var(--black-color);
+    font-size: 20px;
 }
 
-.tech {
-    position: absolute;
-    left: 15px;
-    bottom: 70px;
-    color: white;
-    font-size: 15px;
-}
-
-.tool {
-    display: inline-block;
+.more-link {
     background: var(--gradient-color);
-    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
     text-decoration: none;
-    width: 150px;
-    height: 35px;
-    position: absolute;
-    left: 15px;
-    bottom: 25px;
-    border-radius: 30px;
     font-size: 13px;
-    font-weight: 600;
-    overflow: hidden;
-    font-family: "Inter", sans-serif;
+    color: var(--black-color);
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.tool::before {
-    content: 'Web Development';
-    text-wrap: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    transition: 0.5s;
-}
-
-.tool::after {
-    content: 'Project-link';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 140%;
-    transition: 0.5s;
-}
-
-.tool:hover:before {
-    top: -50%;
-}
-
-.tool:hover:after {
-    top: 50%;
-}
-
-.more-hover {
-    opacity: 0;
-    transition: all 0.6s;
+.more-link:hover {
+    text-decoration: underline;
 }
 
 .more-project-left:hover .more-hover {
-    opacity: 1;
+    transform: translateY(0%);
 }
 
 .more-project-right:hover .more-hover {
-    opacity: 1;
+    transform: translateY(0%);
 }
 
-.black{
-    color: black;
+.line {
+    border: 2px solid var(--black-color);
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 7px;
+}
+
+@media (min-width: 1450px) {
+    .project-img {
+        width: 1700px;
+    }
 }
 
 @media (max-width: 1250px) {
-    .more-project {
-        left: 15px;
-        bottom: 80px;
-        font-size: 25px;
-    }
-
-    .tech {
-        left: 15px;
-        bottom: 60px;
-        font-size: 12px;
-    }
-
-    .tool {
-        width: 125px;
-        height: 25px;
-        left: 15px;
-        bottom: 25px;
-        font-size: 11px;
-    }
+ 
 }
 
 @media (max-width: 1150px) {
@@ -312,7 +283,8 @@
         margin-bottom: 25px;
     }
 
-    .detail-data,.detail-data-2 {
+    .detail-data,
+    .detail-data-2 {
         font-size: 21px;
     }
 
@@ -344,48 +316,6 @@
         flex-direction: column;
         row-gap: 20px;
     }
-
-    .more-project {
-        left: 30px;
-        bottom: 110px;
-        font-size: 30px;
-    }
-
-    .tech {
-        left: 30px;
-        bottom: 80px;
-        font-size: 15px;
-    }
-
-    .tool {
-        width: 150px;
-        height: 35px;
-        left: 30px;
-        bottom: 35px;
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 750px) {
-    .more-project {
-        left: 25px;
-        bottom: 105px;
-        font-size: 30px;
-    }
-
-    .tech {
-        left: 25px;
-        bottom: 75px;
-        font-size: 15px;
-    }
-
-    .tool {
-        width: 150px;
-        height: 35px;
-        left: 25px;
-        bottom: 30px;
-        font-size: 13px;
-    }
 }
 
 @media (max-width: 700px) {
@@ -407,55 +337,12 @@
 
 }
 
-@media (max-width: 680px) {
-    .more-project {
-        left: 25px;
-        bottom: 95px;
-        font-size: 25px;
-    }
-
-    .tech {
-        left: 25px;
-        bottom: 70px;
-        font-size: 13px;
-    }
-
-    .tool {
-        width: 135px;
-        height: 30px;
-        left: 25px;
-        bottom: 25px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 600px) {
-    .more-project {
-        left: 20px;
-        bottom: 80px;
-        font-size: 20px;
-    }
-
-    .tech {
-        left: 20px;
-        bottom: 60px;
-        font-size: 11px;
-    }
-
-    .tool {
-        width: 120px;
-        height: 28px;
-        left: 20px;
-        bottom: 20px;
-        font-size: 10px;
-    }
-}
 
 
 @media (max-width: 524px) {
 
     .container {
-        padding-inline: 30px;
+        padding-inline: 20px;
     }
 
     .projects-section-1 {
@@ -477,6 +364,13 @@
         margin-bottom: 50px;
     }
 
+    .projects-topic-2 {
+        font-size: 27px;
+    }
+
+    .projects-topic {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -491,30 +385,8 @@
         margin-bottom: 8px;
     }
 
-    .projects-detail-box{
+    .projects-detail-box {
         margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    .more-project {
-        left: 15px;
-        bottom: 65px;
-        font-size: 18px;
-    }
-
-    .tech {
-        left: 15px;
-        bottom: 45px;
-        font-size: 10px;
-    }
-
-    .tool {
-        width: 105px;
-        height: 22px;
-        left: 15px;
-        bottom: 15px;
-        font-size: 9px;
     }
 }
 
@@ -525,11 +397,24 @@
 
 }
 
-@media (max-width: 370px) {
-    .projects-topic-2 {
-        font-size: 35px;
+@media (max-width: 410px) {
+    .more-hover {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding-block: 5px;
+        padding-inline: 8px;
     }
-
+    .more-project {
+        font-size: 15px;
+    }
+    
+    .more-link {
+        font-size: 11px;
+        padding: 5px;
+    }
+}
+@media (max-width: 370px) {
     .about-topic {
         font-size: 20px;
     }
@@ -544,27 +429,5 @@
 
     .about-para-3 {
         font-size: 15px;
-    }
-}
-
-@media (max-width: 350px) {
-    .more-project {
-        left: 15px;
-        bottom: 57px;
-        font-size: 15px;
-    }
-
-    .tech {
-        left: 15px;
-        bottom: 40px;
-        font-size: 10px;
-    }
-
-    .tool {
-        width: 95px;
-        height: 20px;
-        left: 15px;
-        bottom: 15px;
-        font-size: 8px;
     }
 }

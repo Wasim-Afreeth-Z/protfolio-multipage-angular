@@ -82,11 +82,13 @@ li {
     display: none;
     font-size: 30px;
     color: white;
+    cursor: pointer;
 }
 
 .moon {
     margin-left: 15px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 
@@ -218,7 +220,7 @@ li {
 
 @media (max-width: 524px) {
     .mobile-nav {
-        padding-inline: 30px;
+        padding-inline: 20px;
     }
 
     .header2,
