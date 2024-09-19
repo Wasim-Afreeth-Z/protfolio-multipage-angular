@@ -106,14 +106,13 @@ li {
     left: 0;
     right: 0;
     background-color: var(--main-color);
-    z-index: 10;
     display: none;
+    z-index: 50;
 }
 
 .mobile-nav {
     padding-inline: 60px;
     padding-block: 20px;
-    display: none;
 }
 
 .mobile {
@@ -125,7 +124,7 @@ li {
 .control {
     width: 100%;
     justify-content: space-between;
-    display: none;
+    display: flex;
 }
 
 .control-right {
@@ -146,15 +145,17 @@ li {
 }
 
 .mobile-drop-down {
-    position: absolute;
+    position: fixed;
     background-color: var(--main-color);
     width: 100%;
     top: 60px;
     left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
-    display: none;
+    transition: all 0.5s ease-in-out;
     border-bottom: 1px rgba(128, 128, 128, 0.473) solid;
+    z-index: 30;
 }
 
 .header2 {
@@ -219,14 +220,6 @@ li {
 
     .mobile-header {
         display: block;
-    }
-
-    .mobile-nav {
-        display: block;
-    }
-
-    .control {
-        display: flex;
     }
 }
 

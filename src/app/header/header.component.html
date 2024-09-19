@@ -37,16 +37,17 @@
                         (click)="headerChange()"><i class={{headerIcon}}></i></div>
                 </div>
             </div>
-            <ul [ngStyle]="{'display':headerValue?'none':'block'}" class="mobile-drop-down ">
-                <li><a (click)="home()" routerLink="/home" routerLinkActive="routerActive" class="header2 home"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                <li><a (click)="project()" routerLink="/project" routerLinkActive="routerActive" class="header2 projects"><i class="fa-solid fa-file-chart-column"></i>Projects</a></li>
-                <li><a (click)="about()" routerLink="/about" routerLinkActive="routerActive" class="header2 about"><i class="fa-solid fa-address-card"></i>About</a></li>
-                <li><a (click)="contact()" routerLink="/contact" routerLinkActive="routerActive" class="header2 contact"><i class="fa-solid fa-message-arrow-up-right"></i>Contact</a></li>
-                <!-- <li><a routerLink="/service" routerLinkActive="routerActive"  class="header2 services">Services</a></li> -->
-                <!-- <li><a class="header2 Testimonials ">Client Testimonials</a></li> -->
-                <!-- <li><a class="header2 blog">Blog</a></li> -->
-                <li><div (click)="contact()" class="headerbutton" routerLink="/contact"><button class="header2-button">LET'S TALK<i class="fa-solid fa-messages"></i></button></div>
-                </li>
-            </ul>
         </div>
     </nav>
+
+    <ul [ngStyle]="{'transform':headerValue?' translateY(-150%)':' translateY(0%)'}" class="mobile-drop-down ">
+        <li><a (click)="home()" routerLink="/home" routerLinkActive="routerActive" class="header2 home"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+        <li><a (click)="project()" routerLink="/project" routerLinkActive="routerActive" class="header2 projects"><i class="fa-solid fa-file-chart-column"></i>Projects</a></li>
+        <li><a (click)="about()" routerLink="/about" routerLinkActive="routerActive" class="header2 about"><i class="fa-solid fa-address-card"></i>About</a></li>
+        <li><a (click)="contact()" routerLink="/contact" routerLinkActive="routerActive" class="header2 contact"><i class="fa-solid fa-message-arrow-up-right"></i>Contact</a></li>
+        <!-- <li><a routerLink="/service" routerLinkActive="routerActive"  class="header2 services">Services</a></li> -->
+        <!-- <li><a class="header2 Testimonials ">Client Testimonials</a></li> -->
+        <!-- <li><a class="header2 blog">Blog</a></li> -->
+        <li><div (click)="contact()" class="headerbutton" routerLink="/contact"><button class="header2-button">LET'S TALK<i class="fa-solid fa-messages"></i></button></div>
+        </li>
+    </ul>
