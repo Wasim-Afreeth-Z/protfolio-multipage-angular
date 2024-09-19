@@ -93,7 +93,7 @@
     font-weight: 700;
 }
 
-.about-topic{
+.about-topic {
     color: var(--black-color);
 }
 
@@ -173,7 +173,7 @@ marquee img {
     margin-bottom: 50px;
 }
 
-.edu{
+.edu {
     margin-bottom: 5px;
 }
 
@@ -196,8 +196,8 @@ marquee img {
     background-color: var(--black-color);
     padding: 40px;
     position: absolute;
-    top: 190px;
-    left: 720px;
+    top: 205px;
+    left: 600px;
 }
 
 .follow-me-box h2 {
@@ -267,8 +267,8 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 160px;
-        left: 510px;
+        top: 165px;
+        left: 550px;
     }
 }
 
@@ -308,8 +308,8 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 160px;
-        left: 435px;
+        top: 180px;
+        left: 470px;
     }
 }
 
@@ -347,8 +347,8 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 160px;
-        left: 370px;
+        top: 135px;
+        left: 405px;
         max-width: 400px;
     }
 }
@@ -364,20 +364,19 @@ marquee img {
     }
 }
 
-@media (max-width: 810px) {
-    .follow-me-img {
-        max-width: 520px;
-        max-height: 520px;
-    }
-
+@media (max-width: 860px) {
     .follow-me-box {
-        top: 450px;
+        top: 455px;
         left: 120px;
-        right: 0;
     }
-
     .follow-me-section {
         margin-bottom: 270px;
+    }
+}
+@media (max-width: 810px) {
+.follow-me-img {
+        max-width: 520px;
+        max-height: 520px;
     }
 }
 
@@ -440,7 +439,7 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 350px;
+        top: 368px;
         left: 110px;
         max-width: 320px;
     }
@@ -458,8 +457,8 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 350px;
-        left: 80px;
+        top: 367px;
+        left: 70px;
     }
 
 }
@@ -471,7 +470,8 @@ marquee img {
         margin-bottom: 30px;
     }
 
-    .edu,.year {
+    .edu,
+    .year {
         margin-bottom: 20px;
     }
 
@@ -489,8 +489,8 @@ marquee img {
     }
 
     .follow-me-box {
-        top: 290px;
-        left: 55px;
+        top: 298px;
+        left: 44px;
         max-width: 292px;
     }
 }
@@ -518,8 +518,8 @@ marquee img {
 
     .follow-me-box {
         padding: 25px;
-        top: 200px;
-        left: 45px;
+        top: 210px;
+        left: 35px;
         max-width: 210px;
     }
 
