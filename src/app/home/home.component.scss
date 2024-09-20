@@ -536,7 +536,7 @@ marquee img {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1045px) {
 
     .profile-section,
     .about-section {
@@ -550,8 +550,9 @@ marquee img {
     }
 
     .about-left,
+    .about-right,
     .about-discription {
-        max-width: 360px;
+        max-width: 100%;
     }
 
     .about-detail {
