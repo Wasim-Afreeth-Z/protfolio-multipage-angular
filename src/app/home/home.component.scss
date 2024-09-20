@@ -49,6 +49,11 @@
 
 .profile-button {
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile-button-2 {
+    cursor: pointer;
 }
 
 .profile-picture {
@@ -58,7 +63,8 @@
     border-radius: 20px;
 }
 
-.profile-picture:hover {
+.profile-picture:hover,
+.skill-box:hover {
     cursor: pointer;
     animation: shake 0.5s 0.8;
 }
@@ -469,7 +475,9 @@ marquee img {
 //     }
 // }
 @media (min-width: 1450px) {
-    .project-image-1,.project-image-2  {
+
+    .project-image-1,
+    .project-image-2 {
         width: 1700px;
     }
 }
@@ -721,13 +729,15 @@ marquee img {
         font-size: 16px;
     }
 
-    .project-1-hover,.project-2-hover {
+    .project-1-hover,
+    .project-2-hover {
         padding-block: 7px;
         padding-inline: 10px;
         bottom: 22px;
     }
 
-    .project-link-1,.project-link-2 {
+    .project-link-1,
+    .project-link-2 {
         font-size: 11px;
         padding: 5px;
         margin-left: 10px;
@@ -757,6 +767,7 @@ marquee img {
 }
 
 @media (max-width: 480px) {
+
     .project-image-1,
     .project-image-2 {
         width: 400px;
@@ -791,6 +802,7 @@ marquee img {
     .about-project-img-2 {
         row-gap: 5px;
     }
+
     .project-name-1,
     .project-name-2 {
         font-size: 14px;
