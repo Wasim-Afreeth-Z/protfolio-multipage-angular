@@ -16,22 +16,59 @@
             </div>
         </div>
 
-        <form data-aos="fade-left" data-aos-duration="1000" data-aos-offset="5" data-aos-delay="50"
-            action="https://formsubmit.co/wasimafreeth36@gmail.com" method="POST">
-            <label class="form-name">Your Name</label>
-            <input class="name-box" type="text" name="name" placeholder="Enter your name" required>
+        <form [formGroup]="MessageForm" (ngSubmit)="MessageAndSubmit()" data-aos="fade-left" data-aos-duration="1000"
+            data-aos-offset="5" data-aos-delay="50">
+            <!-- name -->
+            <div class="name">
+                <label class="form-name">Your Name</label>
+                <input class="name-box" type="text" name="name" placeholder="Enter your name" formControlName="name">
+                @if ((isSubmitted && MessageForm.get('name')?.invalid)|| MessageForm.get('name')?.touched)
+                {
+                @if(MessageForm.get('name')?.hasError('required')){
+                <p class="error">Enter the Name</p>
+                }
+                }
+            </div>
 
-            <label class="form-email">Your E-mail</label>
-            <input class="email-box" type="email" name="email" placeholder="Enter your e-mail" required>
+            <!-- email -->
+            <div class="email">
+                <label class="form-email">Your E-mail</label>
+                <input class="email-box" type="email" name="email" placeholder="Enter your e-mail"
+                    formControlName="email">
+                @if ((isSubmitted && MessageForm.get('email')?.invalid)|| MessageForm.get('email')?.touched)
+                {
+                @if(MessageForm.get('email')?.hasError('required')){
+                <p class="error">Enter the Email</p>
+                }
+                @if(MessageForm.get('email')?.hasError('email')){
+                <p class="error">Enter correct Format Email</p>
+                }
+                }
+            </div>
 
-            <label class="form-subject">Subject</label>
-            <input class="subject-box" type="text" name="subject" required>
+            <!-- subject -->
+            <div class="subject">
+                <label class="form-subject">Subject</label>
+                <input class="subject-box" type="text" name="subject" formControlName="subject">
+                @if ((isSubmitted && MessageForm.get('subject')?.invalid)|| MessageForm.get('subject')?.touched)
+                {
+                @if(MessageForm.get('subject')?.hasError('required')){
+                <p class="error">Enter the Subject</p>
+                }
+                }
+            </div>
 
-            <label class="form-message">Message</label>
-            <textarea class="message-box" name="message" required></textarea>
-
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
+            <!-- message -->
+            <div class="message">
+                <label class="form-message">Message</label>
+                <textarea class="message-box" name="message" formControlName="message"></textarea>
+                @if ((isSubmitted && MessageForm.get('message')?.invalid)|| MessageForm.get('message')?.touched)
+                {
+                @if(MessageForm.get('message')?.hasError('required')){
+                <p class="error">Enter the Message</p>
+                }
+                }
+            </div>
 
             <button class="form-submit">SUBMIT NOW</button>
 

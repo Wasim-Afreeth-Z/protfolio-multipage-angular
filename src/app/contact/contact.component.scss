@@ -43,7 +43,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-.phone-link,.email-link{
+.phone-link,
+.email-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -76,10 +77,19 @@ form {
     border-radius: 5px;
     background-color: var(--skill-contact-box);
     color: var(--black-color);
-    margin-bottom: 20px;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
+}
+
+.name,
+.email,
+.subject {
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 25px;
 }
 
 .message-box {
@@ -90,7 +100,6 @@ form {
     border-radius: 5px;
     background-color: var(--skill-contact-box);
     color: var(--black-color);
-    margin-bottom: 25px;
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 500;
@@ -98,7 +107,7 @@ form {
 }
 
 .email-icon-box:hover,
-.phone-icon-box:hover{
+.phone-icon-box:hover {
     text-decoration: underline;
 }
 
@@ -110,6 +119,14 @@ form {
 .phone-icon-box:hover {
     cursor: pointer;
     animation: shake 0.5s 0.8;
+}
+
+.error {
+    // text-red-600 mt-2 pl-2
+    color: red;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 12px;
 }
 
 @keyframes shake {
@@ -197,14 +214,14 @@ input::placeholder {
 
 @media (max-width: 1150px) {
 
-    .contact-section{
+    .contact-section {
         padding-inline: 60px;
     }
 }
 
 @media (max-width: 1000px) {
 
-    .contact-section{
+    .contact-section {
         display: flex;
         flex-direction: column;
     }
