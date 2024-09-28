@@ -231,6 +231,13 @@ img{
 }
 
 @media (min-width: 1450px) {
+    main {
+        width: 1700px;
+        margin-inline: auto ;
+    }
+}
+
+@media (min-width: 1450px) {
     .project-img {
         width: 1700px;
     }

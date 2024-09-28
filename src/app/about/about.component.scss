@@ -247,7 +247,12 @@ marquee img {
 
 
 
-
+@media (min-width: 1450px) {
+    section,.count {
+        width: 1700px;
+        margin-inline: auto ;
+    }
+}
 
 
 @media (max-width: 1460px) {

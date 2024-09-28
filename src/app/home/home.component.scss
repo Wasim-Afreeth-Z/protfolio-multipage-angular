@@ -621,6 +621,13 @@ marquee img {
     }
 }
 
+@media (min-width: 1450px) {
+    section {
+        width: 1700px;
+        margin-inline: auto ;
+    }
+}
+
 @media (max-width: 850px) {
 
     // .project-link-1,
